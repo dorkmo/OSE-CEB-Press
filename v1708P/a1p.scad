@@ -1,9 +1,12 @@
 include <vars.scad>;
 use <modus.scad>;
 
+//projection(cut = true) //use projection to create 2D DXF files
 a1p();
 
 module a1p(){
+
+$fn=45;
 
 difference(){
     cube([a1x,a1y,a1z]);
